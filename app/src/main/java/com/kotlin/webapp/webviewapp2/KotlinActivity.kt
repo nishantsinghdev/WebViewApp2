@@ -23,7 +23,7 @@ class KotlinActivity : AppCompatActivity() {
         myWebView.webViewClient = object : WebViewClient() {                // STEP - 05
 
             override fun onPageFinished(view: WebView?, url: String?) {     // STEP - 06
-                var javaScript: String = "javascript: try { jObj = eval($J_OBJ.getSrc()); } catch(err) { jObj = window; }"
+                var javaScript: String = "javascript: try { jObj = eval($J_OBJ); } catch(err) { jObj = window; }"
                 myWebView.loadUrl(javaScript)
             }
 
@@ -50,11 +50,6 @@ class KotlinActivity : AppCompatActivity() {
                 toast("Enter some text !!")
             else
                 toast("Msg : "+webMsg)
-        }
-
-        @JavascriptInterface
-        fun getSrc(): String {
-            return J_OBJ.toString()
         }
 
         @JavascriptInterface
