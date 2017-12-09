@@ -1,4 +1,4 @@
-
+var label = document.getElementById('label').innerHTML;
 var jObj = window;        // Window Object to Manipulate from Kotlin
 
 setTimeout(function() {   // Show a Greet Message after 0.4 sec of loading JS
@@ -10,9 +10,16 @@ function greet() {
   alert("Hello, JS !!");
 }
 
+function setLabel(msg) {
+    if (msg=="")
+        msg = label;
+
+    document.getElementById('label').innerHTML = msg;
+}
+
 function dispMsg(msg) {
   if (msg=="")
-    msg = "Enter some text !!";
+    msg = "Enter some text...";
   else
     msg = "Msg : " + msg;
 
@@ -21,6 +28,7 @@ function dispMsg(msg) {
 
 function show() {
   var msg = document.getElementById('msg');
+  setLabel(msg.value);
   jObj.dispMsg(msg.value);
   msg.value = "";
 }

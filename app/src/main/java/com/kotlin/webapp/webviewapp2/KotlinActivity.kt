@@ -51,7 +51,7 @@ class KotlinActivity : AppCompatActivity() {
         @JavascriptInterface
         fun dispMsg(webMsg: String) {
             if (webMsg.isNullOrEmpty() || webMsg.isNullOrBlank())
-                toast("Enter some text !!")
+                toast("Enter some text...")
             else
                 toast("Msg : "+webMsg)
         }
@@ -61,7 +61,6 @@ class KotlinActivity : AppCompatActivity() {
             toast("Hello, Kotlin !!")
         }
     } // End of JavaScriptInterface class
-
 
 
     companion object {                                                      // STEP - 01
