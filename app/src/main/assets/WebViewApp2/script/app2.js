@@ -20,8 +20,9 @@ function dispMsg(msg) {
 }
 
 function show() {
-  var msg = document.getElementById('msg').value;
-  jObj.dispMsg(msg);
+  var msg = document.getElementById('msg');
+  jObj.dispMsg(msg.value);
+  msg.value = "";
 }
 
 

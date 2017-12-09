@@ -1,5 +1,7 @@
 package com.kotlin.webapp.webviewapp2
 
+import android.content.Context
+import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.JavascriptInterface
@@ -28,14 +30,16 @@ class KotlinActivity : AppCompatActivity() {
             }
 
         }
-        myWebView.loadUrl(BASE_URL)                                         // STEP - 07
+
+        if (isNetworkAvailable) {                                           // STEP - 07
+            myWebView.loadUrl(BASE_URL)
+            toast("Online Mode : Loading Live Page ...")
+        } else {
+            myWebView.loadUrl(INNER_URL)
+            toast("Offline Mode : Loading App Page ...")
+        }
 
     }
-
-    fun toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
-        Toast.makeText(this.applicationContext, message, duration).show()
-    }
-
 
     override fun onDestroy() {                                              // STEP - 08
         myWebView.removeJavascriptInterface(J_OBJ)
@@ -65,4 +69,15 @@ class KotlinActivity : AppCompatActivity() {
         private val INNER_URL = "file:///android_asset/WebViewApp2/index.html"
         private val BASE_URL = "https://fifthsirean02.github.io/webviewpage2/"
     } // End of Companion Object
+
+    private val isNetworkAvailable: Boolean
+        get() {
+            val connectivityManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+            val activeNetworkInfo = connectivityManager.activeNetworkInfo
+            return activeNetworkInfo != null && activeNetworkInfo.isConnected
+        }
+
+    fun toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(this.applicationContext, message, duration).show()
+    }
 }
