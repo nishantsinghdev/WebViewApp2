@@ -5,7 +5,9 @@ An Android App in Kotlin to create a WebWiew to display a Web Page.
 
 Inject Kotlin's functions in JavaScript with the same name as the another JS function.
 
-Override target JS function's call when opened on this app by Overwriting the variable JObj containing a Window Object by re-assigining it with a Kotlin Object's name (in String) by putting it under pre-defined ECMA6 function : eval() during assignment to make name (a String) into a String Template. 
+Override target JS function's call when opened on this app by Overwriting the variable JObj containing a Window Object by re-assigining it with a Kotlin Object's name (in String) by putting it under pre-defined ECMA6 function : eval() during assignment to make name (a String) into a String Template.
+
+Also, use the newly obtained jObj to check whether the page is loaded in the App or Not.
 
 # index.html
 WebView Page 2
