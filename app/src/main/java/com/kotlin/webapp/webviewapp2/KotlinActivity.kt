@@ -4,10 +4,8 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.JavascriptInterface
-import android.webkit.WebChromeClient
-import android.webkit.WebView
-import android.webkit.WebViewClient
+import android.view.View
+import android.webkit.*
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_kotlin.*
 
@@ -19,27 +17,49 @@ class KotlinActivity : AppCompatActivity() {
 
 
         WebView.setWebContentsDebuggingEnabled(true)                        // STEP - 02
-        myWebView.addJavascriptInterface(JavaScriptInterface(), J_OBJ)      // STEP - 04
+        myWebView.settings.setAppCachePath(this.applicationContext.cacheDir.absolutePath)
+        myWebView.settings.allowFileAccess = true
+        myWebView.settings.domStorageEnabled = true
+        myWebView.settings.setAppCacheEnabled(true)
         myWebView.settings.javaScriptEnabled = true                         // STEP - 03
+        myWebView.settings.cacheMode = WebSettings.LOAD_DEFAULT
+        myWebView.addJavascriptInterface(JavaScriptInterface(), J_OBJ)      // STEP - 04
         myWebView.webChromeClient = object : WebChromeClient() {}
         myWebView.webViewClient = object : WebViewClient() {                // STEP - 05
+            var err_type = 0
+
+            override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
+                if (myWebView.settings.cacheMode == WebSettings.LOAD_CACHE_ELSE_NETWORK && request?.url.toString() == BASE_URL) {
+                    myWebView.settings.cacheMode = WebSettings.LOAD_NO_CACHE
+                    myWebView.loadUrl(INNER_URL)
+                } else {
+                    toast("404 - Page Not Found")
+                    err_type++
+                }
+            }
 
             override fun onPageFinished(view: WebView?, url: String?) {     // STEP - 06
-                if (url == BASE_URL) {
-                    var javaScript: String = "javascript: try { jObj = eval($J_OBJ); } catch(err) { jObj = window; }"
+                var javaScript: String = "javascript: try { jObj = eval($J_OBJ); } catch(err) { jObj = window; }"
+                if (url == BASE_URL && myWebView.settings.cacheMode == WebSettings.LOAD_DEFAULT) {
                     myWebView.loadUrl(javaScript)
+                    toast("Online Mode : Loading Live Page ...")
+                } else if (url == BASE_URL && myWebView.settings.cacheMode == WebSettings.LOAD_CACHE_ELSE_NETWORK) {
+                    myWebView.loadUrl(javaScript)
+                    toast("Offline Mode : Loading Cached Page ...")
+                } else if (url == INNER_URL && myWebView.settings.cacheMode == WebSettings.LOAD_NO_CACHE) {
+                    myWebView.clearCache(true)
+                    myWebView.loadUrl(javaScript)
+                    if (err_type == 0)
+                        toast("Offline Mode : Loading App Page ...")
                 }
             }
 
         }
 
-        if (isNetworkAvailable) {                                           // STEP - 07
-            myWebView.loadUrl(BASE_URL)
-            toast("Online Mode : Loading Live Page ...")
-        } else {
-            myWebView.loadUrl(INNER_URL)
-            toast("Offline Mode : Loading App Page ...")
+        if (!isNetworkAvailable) {                                          // STEP - 07
+            myWebView.settings.cacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK
         }
+        myWebView.loadUrl(BASE_URL)
 
     }
 
