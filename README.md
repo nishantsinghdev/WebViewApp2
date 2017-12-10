@@ -1,5 +1,19 @@
 # WebViewApp2
 WebView App 2 with Kotlin
-An Android App in Kotlin to create a WebWiew to display the Web Page @ https://fifthsirean02.github.io/webviewpage2/
-and Kotlin's functions in JavaScript to with the same name as the default function in JS to switch call when opened
-on this app to display a toast in place of an alert as in JS.
+
+An Android App in Kotlin to create a WebWiew to display a Web Page.
+
+Inject Kotlin's functions in JavaScript with (or without) the same name (or signature) as another JS function.
+
+Re-assign the variable jObj containing a Window Object with a Kotlin's Object name (in String) by putting it under pre-defined ECMA6 function : eval() during assignment to make name (a String) into a String Template.
+
+Use the newly obtained jObj to check whether the page is loaded in the App or Not.
+
+Also, override target JS function's call with Kotlin function with jObj (for functions with same name / signature) when opened on this App.
+
+# index.html
+WebView Page 2
+
+A sample page to test my project : WebViewApp2
+
+Check this page out @ https://fifthsirean02.github.io/WebViewApp2/
