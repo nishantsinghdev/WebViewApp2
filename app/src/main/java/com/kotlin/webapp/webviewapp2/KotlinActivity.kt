@@ -4,7 +4,6 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.webkit.*
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_kotlin.*
