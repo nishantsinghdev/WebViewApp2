@@ -10,4 +10,4 @@ WebView Page 2
 
 A sample page to test my project : WebViewApp2
 
-But first check this page @ https://fifthsirean02.github.io/WebViewApp2/
+Check this page out @ https://fifthsirean02.github.io/WebViewApp2/
