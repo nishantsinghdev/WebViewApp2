@@ -3,7 +3,7 @@ var jObj = window;        // Window Object to Manipulate from Kotlin
 
 setTimeout(function() {   // Show a Greet Message after 0.4 sec of loading JS
   jObj.greet();
-}, 400);
+}, 500);
 
 
 function greet() {
