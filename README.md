@@ -9,7 +9,7 @@ Re-assign the variable jObj containing a Window Object with a Kotlin's Object na
 
 Use the newly obtained jObj to check whether the page is loaded in the App or Not.
 
-Also, override target JS function's call with Kotlin function with jObj when opened on this App.
+Also, override target JS function's call with Kotlin function with jObj (for functions with same name) when opened on this App.
 
 # index.html
 WebView Page 2
