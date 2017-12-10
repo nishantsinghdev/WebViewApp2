@@ -3,7 +3,7 @@ WebView App 2 with Kotlin
 
 An Android App in Kotlin to create a WebWiew to display a Web Page.
 
-Inject Kotlin's functions in JavaScript with the same name as the another JS function.
+Inject Kotlin's functions in JavaScript with / without the same name as another JS function.
 
 Re-assign the variable jObj containing a Window Object with a Kotlin's Object name (in String) by putting it under pre-defined ECMA6 function : eval() during assignment to make name (a String) into a String Template.
 
