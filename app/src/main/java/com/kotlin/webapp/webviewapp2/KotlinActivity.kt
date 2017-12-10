@@ -25,8 +25,10 @@ class KotlinActivity : AppCompatActivity() {
         myWebView.webViewClient = object : WebViewClient() {                // STEP - 05
 
             override fun onPageFinished(view: WebView?, url: String?) {     // STEP - 06
-                var javaScript: String = "javascript: try { jObj = eval($J_OBJ); } catch(err) { jObj = window; }"
-                myWebView.loadUrl(javaScript)
+                if (url == BASE_URL) {
+                    var javaScript: String = "javascript: try { jObj = eval($J_OBJ); } catch(err) { jObj = window; }"
+                    myWebView.loadUrl(javaScript)
+                }
             }
 
         }
@@ -66,7 +68,7 @@ class KotlinActivity : AppCompatActivity() {
     companion object {                                                      // STEP - 01
         private val J_OBJ = "KT"
         private val INNER_URL = "file:///android_asset/WebViewApp2/index.html"
-        private val BASE_URL = "https://fifthsirean02.github.io/webviewpage2/"
+        private val BASE_URL = "https://fifthsirean02.github.io/WebViewApp2/"
     } // End of Companion Object
 
     private val isNetworkAvailable: Boolean
