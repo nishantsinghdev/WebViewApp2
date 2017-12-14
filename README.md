@@ -37,5 +37,6 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 | Data |
 | ----------------- |
 | One | Two | Three |
+| --- | --- | ----- |
 | Apples | Oranges | Pears |
 | Cakes | Donuts | Sweet Bread |
