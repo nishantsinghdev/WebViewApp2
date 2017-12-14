@@ -18,7 +18,7 @@ Also, override target JS function's call with Kotlin function with jObj (for fun
 
 A sample page to test my project : WebViewApp2
 
-Check this page out **@** https://nishantsinghdev.github.io/WebViewApp2/ - automatic![Project's Page](https://nishantsinghdev.github.io/WebViewApp2/)
+Check this page out **@** https://nishantsinghdev.github.io/WebViewApp2/ - automatic ![Project's Page](https://nishantsinghdev.github.io/WebViewApp2/)
 
 ---
 
