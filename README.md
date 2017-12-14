@@ -22,7 +22,7 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 
 
 + ## HTML5 Page (JavaScript v6)
-![Pic-1](/screenshots/WebPage-1.png#right = 300x)
+![Pic-1|512x397,20%](/screenshots/WebPage-1.png)
 ![Pic-2](/screenshots/WebPage-2.png#right "Pic-2")
 ![Pic-3](/screenshots/WebPage-3.png#right "Pic-3")
 
