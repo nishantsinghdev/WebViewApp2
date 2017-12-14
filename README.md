@@ -30,4 +30,4 @@ Web Page - 1 | Web Page - 2 | Web Page - 3
 ## Web App Page (Kotlin's WebView)
 Web App - 1 | Web App - 2 | Web App - 3
 ----------- | ----------- | -----------
-<img src="./screenshots/WebApp-1.png" width="300" /> | <img src="./screenshots/WebApp-2.png" width="300" /> | <img src="./screenshots/WebApp-3.png" width="300" />
+<img src="./screenshots/WebApp-1.png" /> | <img src="./screenshots/WebApp-2.png" /> | <img src="./screenshots/WebApp-3.png" />
