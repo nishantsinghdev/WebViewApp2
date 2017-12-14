@@ -22,11 +22,9 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 
 
 + ## HTML5 Page (JavaScript v6)
-![Pic-1|512x397,20%](/screenshots/WebPage-1.png "Pic-1"){ width=300px }
-![Pic-2](/screenshots/WebPage-2.png#right "Pic-2"){ width=300px }
-![Pic-3](/screenshots/WebPage-3.png#right "Pic-3"){ width=300px }
-
-img[src*='#right']{ float: right; }
+![Pic-1|512x397,20%](/screenshots/WebPage-1.png "Pic-1"){width=300px}
+![Pic-2](/screenshots/WebPage-2.png "Pic-2"){width=300px}
+![Pic-3](/screenshots/WebPage-3.png "Pic-3"){width=300px}
 
 
 
