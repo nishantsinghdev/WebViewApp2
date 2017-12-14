@@ -1,5 +1,5 @@
 # WebViewApp2
-WebView App 2 with **Kotlin**
+**WebView App 2** with **Kotlin**
 
 An Android App in **Kotlin** to create a _**WebWiew**_ to display a _**Web Page**_ from from _online / cache memory / local storage_.
 
@@ -14,7 +14,7 @@ Also, override target JS function's call with Kotlin function with jObj (for fun
 ---
 
 # index.html
-WebView Page 2
+**WebView Page 2**
 
 A sample page to test my project : WebViewApp2
 
