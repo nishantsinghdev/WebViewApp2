@@ -24,7 +24,7 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 ## HTML5 Page (JavaScript v6)
 Web Page - 1 | Web Page - 2 | Web Page - 3
 ------------ | ------------ | ------------
-<img src="./screenshots/WebPage-1.png" /> | <img src="./screenshots/WebPage-2.png" /> | <img src="./screenshots/WebPage-3.png" />
+![Pic-1](/screenshots/WebPage-1.png) | ![Pic-2](/screenshots/WebPage-2.png) | ![Pic-3](/screenshots/WebPage-3.png)
 
 
 ## Web App Page (Kotlin's WebView)
