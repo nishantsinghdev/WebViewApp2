@@ -23,7 +23,9 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 
 + ## HTML5 Page (JavaScript v6)
 <div style="text-align:center" markdown="1">
-![Pic-1](/screenshots/WebPage-1.png "Pic-1") ![Pic-2](/screenshots/WebPage-2.png "Pic-2") ![Pic-3](/screenshots/WebPage-3.png "Pic-3")
+![Pic-1](/screenshots/WebPage-1.png "Pic-1")
+![Pic-2](/screenshots/WebPage-2.png "Pic-2")
+![Pic-3](/screenshots/WebPage-3.png "Pic-3")
 </div>
 
 
