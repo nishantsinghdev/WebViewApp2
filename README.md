@@ -12,6 +12,7 @@ Use the newly obtained jObj to check whether the page is loaded in the App or No
 Also, override target JS function's call with Kotlin function with jObj (for functions with same name / signature) when opened on this App.
 
 ---
+
 # index.html
 WebView Page 2
 
@@ -20,6 +21,7 @@ A sample page to test my project : WebViewApp2
 Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 
 ---
+
 # Screenshots
 
 + ## HTML5 Page (JavaScript v6)
