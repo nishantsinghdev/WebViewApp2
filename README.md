@@ -15,10 +15,11 @@ Also, override target JS function's call with Kotlin function with jObj (for fun
 
 # index.html
 **WebView Page 2**
+[https://nishantsinghdev.github.io/WebViewApp2/][Arbitrary case-insensitive reference demo_page]
 
-A sample page to test my project : WebViewApp2
+A sample page to test my project : **WebViewApp2**
 
-Check this page out **@** ![](https://nishantsinghdev.github.io/WebViewApp2/ "Project's Page")
+Check this page out **@** [link demo_page itself]
 
 ---
 
