@@ -33,13 +33,9 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 | ----------- | ----------- | ----------- |
 | ![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png) |
 
-
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
++ ### Check
+| Data |
+| --- |
+| One | Two | Three |
+| Apples | Oranges | Pears |
+| Cakes | Donuts | Sweet Bread |
