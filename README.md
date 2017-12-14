@@ -22,18 +22,13 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 
 
 + ## HTML5 Page (JavaScript v6)
-Web Page - 1 | Web Page - 2 | Web Page - 3
------------- | ------------ | ------------
-![Pic-1](/screenshots/WebPage-1.png) | ![Pic-2](/screenshots/WebPage-2.png) | ![Pic-3](/screenshots/WebPage-3.png)
+| Web Page - 1 | Web Page - 2 | Web Page - 3 |
+| ------------ | ------------ | ------------ |
+| ![Pic-1](/screenshots/WebPage-1.png) | ![Pic-2](/screenshots/WebPage-2.png) | ![Pic-3](/screenshots/WebPage-3.png) |
 
 
 + ## Web App Page (Kotlin's WebView)
-Web App - 1 | Web App - 2 | Web App - 3
------------ | ----------- | -----------
-![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png)
+| Web App - 1 | Web App - 2 | Web App - 3 |
+| ----------- | ----------- | ----------- |
+| ![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png) |
 
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
