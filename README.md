@@ -31,7 +31,7 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 + ## Web App Page (Kotlin's WebView)
 | Web App - 1 | Web App - 2 | Web App - 3 |
 | ----------- | ----------- | ----------- |
-| ![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png) |
+| ![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png)
 
 
 ---
