@@ -17,3 +17,9 @@ WebView Page 2
 A sample page to test my project : WebViewApp2
 
 Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
+
+# Screenshots
+## HTML Page
+Web Page - 1 | Web Page - 2 | Web Page - 3
+------------ | ------------ | ------------
+<img src="./screenshots/WebPage-1.png" width="300" /> | <img src="./screenshots/WebPage-2.png" width="300" /> | <img src="./screenshots/WebPage-3.png" width="300" />
