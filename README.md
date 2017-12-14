@@ -33,8 +33,3 @@ Check this page out @ https://nishantsinghdev.github.io/WebViewApp2/
 | ----------- | ----------- | ----------- |
 | ![Pic-1](/screenshots/WebApp-1.png) | ![Pic-2](/screenshots/WebApp-2.png) | ![Pic-3](/screenshots/WebApp-3.png) |
 
-+
-| One | Two | Three |
-| --- | --- | ----- |
-| Apples | Oranges | Pears |
-| Cakes | Donuts | Sweet Bread |
